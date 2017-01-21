@@ -6,11 +6,11 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>#<th>
-      <th width="220">Product Pic<th>
-      <th>Name<th>
-      <th>Price<th>
-      <th width="100"> Options<th>
+      <th>#</th>
+      <th width="220">Product Pic</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th width="100"> Options</th>
     </tr>
   </thead>
   <tbody>
@@ -35,8 +35,8 @@
         <%= product.price%>
       </td>
       <td>
-          <%= link_to("Edit", edit_admin_product_path(product)) %>
-          <%= link_to("Delete", admin_product_path(product), method: :delete, data: {confirm: "Are your sure?"}) %>
+          <%= link_to("Edit", edit_admin_product_path(product)) %> |
+          <%= link_to("Delete", admin_product_path(product), :method => :delete, data: {confirm: "Are your sure?"}) %>
       </td>
 
     </tr>
